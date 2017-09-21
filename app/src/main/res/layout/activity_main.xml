@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aqinga.yuekaolianxi.MainActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        </android.support.v4.view.ViewPager>
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_weight="15"
+            android:background="#959595"
+            android:orientation="horizontal"
+           android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RadioButton
+                android:id="@+id/circle"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:button="@null"
+                android:text="圈子"
+                android:textSize="20dp"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/friend"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="朋友"
+                android:textSize="20dp"
+                android:gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/mine"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="我的"
+                android:gravity="center_horizontal"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>
